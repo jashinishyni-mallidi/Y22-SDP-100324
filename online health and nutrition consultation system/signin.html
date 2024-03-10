@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css"> <!-- Replace "your-stylesheet.css" with the path to your CSS file -->
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">healthy </a>
+    <nav class="navbar">
+        <a href="index.html">home</a> <!-- Updated the href attribute to point to the home page -->
+        <a href="about.html">about</a> <!-- Updated the href attribute to point to the about page -->
+        <a href="services.html">services</a> <!-- Updated the href attribute to point to the services page -->
+        <a href="diet.html">diet</a> <!-- Updated the href attribute to point to the diet page -->
+        <a href="pricing.html">pricing</a> <!-- Updated the href attribute to point to the pricing page -->
+        <a href="review.html">review</a> <!-- Updated the href attribute to point to the review page -->
+    </nav>
+    <div class="fas fa-bars" id="menu"></div>
+    <div class="nav-button">
+        <a href="signin.html" class="btn white-btn">Sign In</a>
+        <a href="signup.html" class="btn">Sign Up</a> <!-- Updated the href attribute to point to the signup page -->
+    </div>
+    <div class="nav-menu-btn">
+    </div>
+</header>
+
+<div class="login-container">
+    <div class="login-form">
+        <h1>Login Form</h1>
+        <form id="loginForm" action="#" method="post">
+            <p>User Name</p>
+            <input type="text" name="user" id="username" placeholder="User Name">
+            <p>Password</p>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        // Prevent default form submission
+        event.preventDefault();
+
+        // You can perform form validation here if needed
+        
+        // Redirect to the home page
+        window.location.href = "index.html"; // Replace "index.html" with the path to your actual home page
+    });
+</script>
+
+</body>
+</html>
